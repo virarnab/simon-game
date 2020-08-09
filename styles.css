@@ -1,0 +1,168 @@
+body {
+  text-align: center;
+background-color: black;
+
+  border-radius: 100%;
+}
+.laddoo{
+  width:50%;
+  margin: auto;
+  background-color: #bbfaf4;
+  text-align: left;
+  padding-top: 1%;
+  padding-bottom: 0.7%;
+  margin-top: 2%;
+  border-radius: 15%;
+}
+h3{
+  text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #bbfaf4;
+}
+
+#score {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin: 2% auto;
+  color: #bbfaf4;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid;
+  border-radius: 100%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+
+  border-color: red;
+}
+
+.green {
+    border-color: green;
+}
+
+.blue {
+    border-color: blue;
+}
+
+.yellow {
+    border-color: yellow;
+}
+.redb {
+
+  background-color: red;
+}
+
+.greenb {
+    background-color: green;
+}
+
+.blueb {
+    background-color: blue;
+}
+
+.yellowb {
+    background-color: yellow;
+}
+.pressed {
+  height: 250px;
+  width: 250px;
+}
+.correct{
+  background-color: gold;
+  opacity: 0.8;
+}
+.ini{
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+
+
+  color: #bbfaf4;
+  font-size: 1.5rem;
+}
+.ini:hover::after {
+  content: " Wiki"
+}
+h2{
+  color: white;
+  color: #bbfaf4;
+  font-family: 'Press Start 2P', cursive;
+}
+table{
+  color: #bbfaf4;
+  margin-left: 10%;
+  margin-right: 10%;
+
+    font-size: 20px;
+}
+img{
+  border-radius: 100%;
+}
+td{
+  padding: 1%;
+}
+.text {
+  animation: blinker 0.5s linear infinite;
+  color: yellow;
+  text-decoration: none;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.mid{
+  margin-top: 5%;
+}
+footer{
+  color: #bbfaf4;
+  font-family: 'Press Start 2P', cursive;
+  margin: 2%;
+}
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
