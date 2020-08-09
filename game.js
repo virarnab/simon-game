@@ -6,7 +6,11 @@ var score = 0;
 var taps = 1;
 //var hs = [];
 
-$(".myButton").click(nextSequence)
+$(".myButton").click(function(){
+  nextSequence();
+score = 0;
+$("#score").text("Score: "+score);
+})
 
 
 $(".btn").click(function(){
@@ -54,7 +58,7 @@ function checkAnswer(c){
 }
 
 function nextSequence(){
-  $(".myButton").fadeOut(100);
+  $(".myButton").fadeOut(1000);
   $("h2").text(taps+" tap(s)")
   userClickedPattern = [];
   //arnab++;
@@ -91,15 +95,11 @@ function playSound(name){
 }
 
 function startOver(){
-  score = 0;
+
   gamePattern = [];
   $(".myButton").fadeIn(2000);
   $(".myButton").text("RETRY");
-  setTimeout(
-    function(){
-      $("#score").text("Score: "+score);
-    },2000
-  )
+
 
   //started = false;
 }
