@@ -41,11 +41,11 @@ h3{
 }
 
 .btn {
-  margin: 25px;
+  margin: 1.563rem;
   display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid;
+  height: 12.5rem;
+  width: 12.5rem;
+  border: 0.625rem solid;
   border-radius: 100%;
 }
 
