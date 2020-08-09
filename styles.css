@@ -166,3 +166,13 @@ footer{
 	position:relative;
 	top:1px;
 }
+@media (max-width: 1000px){
+  .btn {
+    margin: 0.4rem;
+    display: inline-block;
+    height: 3.125rem;
+    width: 3.125rem;
+    border: 0.15625rem solid;
+    border-radius: 100%;
+  }
+}
