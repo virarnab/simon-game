@@ -67,13 +67,28 @@ function nextSequence(){
   var x = Math.floor(Math.random()*4);
   var randomColor = buttonColours[x];
   gamePattern.push(randomColor);
-  $("#"+randomColor).addClass(randomColor+"b");
-  setTimeout(
-    function(){
-      $("#"+randomColor).removeClass(randomColor+"b");
-    },150
-  );
-  playSound(randomColor);
+
+
+  var c = gamePattern.length;
+  for(let i = 0; i<c; i++) {
+
+                (function(n) {
+                    setTimeout(function(){
+                      $("#"+gamePattern[i]).addClass(gamePattern[i]+"b");
+                      playSound(gamePattern[i]);
+                      setTimeout(function(){
+                        $("#"+gamePattern[i]).removeClass(gamePattern[i]+"b");
+                      },150)
+
+                    },500*(i+1)
+                  );
+                }(i));
+            }
+
+
+
+
+
   setTimeout(
     function(){
       $("#level-title").text("PLAY");
